@@ -1,7 +1,7 @@
 ---
 title: Hello World! (by Mando's)
-date: 2023-10-01 20:33 -300
-categories: [off,blogging]
+date: 2023-10-01 20:33:00 -03:00
+categories: [blogging]
 tags: [blogging,personal]
 ---
 
