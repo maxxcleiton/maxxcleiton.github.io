@@ -1,0 +1,55 @@
+I"M	<p>Apresento-lhes, o Free Download Manager</p>
+
+<p><img src="/assets/screenshots/debian-downloads-fdm.png" alt="FDM" /></p>
+
+<p>Ele tanto baixa arquivos <code class="language-plaintext highlighter-rouge">.torrent</code>, quanto arquivos normais</p>
+
+<p>Muitas vezes vamos baixar alguns arquivos mais pesados pelo navegador, e a internet inventa de dar alguma queda aleatória, assim comprometendo nosso download que demorou 10 minutos para quase estar finalizado.</p>
+
+<h2 id="como-instalar-no-debianubuntu">Como instalar no Debian/Ubuntu</h2>
+
+<p>Baixe por <a href="https://www.freedownloadmanager.org/pt/download-fdm-for-linux.html" target="_blank">aqui</a></p>
+
+<p>Após baixar, por se tratar de um arquivo <code class="language-plaintext highlighter-rouge">.deb</code>, se seu sistema tiver um gerenciador de instalação, você poderá dar dois cliques no arquivo.</p>
+
+<p>Caso não possua um gerenciador de instalação:</p>
+
+<p>Acesse o terminal do sistema.</p>
+
+<p>Instale as dependências</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>ffmpeg libavdevice59
+</code></pre></div></div>
+
+<p>Acesse o diretório onde foi baixado o arquivo.</p>
+
+<p>Nesse caso aqui está em ~/Downloads</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/Downloads
+</code></pre></div></div>
+
+<p>Digite o comando dpkg -i</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dpkg <span class="nt">-i</span> freedownloadmanager.deb
+</code></pre></div></div>
+
+<p>Após isso, basta procurar pelo programa recém instalado em seu menu iniciar.</p>
+
+<p>E seja feliz.</p>
+
+<h2 id="como-adicionar-um-download-no-programa">Como adicionar um download no programa</h2>
+
+<p>No programa, existem três formas de adicionar downloads nele.</p>
+
+<ol>
+  <li>Extensão do FDM no navegador.</li>
+  <li>Arrastando a URL no programa.</li>
+  <li>
+    <p>Adicionando a URL manualmente.</p>
+  </li>
+  <li>Adicionando a URL manualmente.</li>
+</ol>
+
+<p>Clique no + que fica na região superior esquerda do programa.</p>
+
+<p>Será aberta uma janela, cole o URL nela, e clique em Ok,</p>
+
+<p>![Add URL FDM](/assets/screenshots/adicao-url-fdm.png</p>
+:ET

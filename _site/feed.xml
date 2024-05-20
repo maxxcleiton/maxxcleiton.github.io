@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-19T21:26:57-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Linux Sincero</title><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><entry><title type="html">O melhor gerenciador de downloads do linux</title><link href="http://localhost:4000/posts/free-download-manager/" rel="alternate" type="text/html" title="O melhor gerenciador de downloads do linux" /><published>2024-05-19T21:24:00-03:00</published><updated>2024-05-19T21:24:00-03:00</updated><id>http://localhost:4000/posts/free-download-manager</id><content type="html" xml:base="http://localhost:4000/posts/free-download-manager/"><![CDATA[<p>Apresento-lhes, o Free Download Manager</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-19T21:51:58-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Linux Sincero</title><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><entry><title type="html">O melhor gerenciador de downloads do linux</title><link href="http://localhost:4000/posts/free-download-manager/" rel="alternate" type="text/html" title="O melhor gerenciador de downloads do linux" /><published>2024-05-19T21:24:00-03:00</published><updated>2024-05-19T21:24:00-03:00</updated><id>http://localhost:4000/posts/free-download-manager</id><content type="html" xml:base="http://localhost:4000/posts/free-download-manager/"><![CDATA[<p>Apresento-lhes, o Free Download Manager</p>
+
+<p><img src="/assets/screenshots/debian-downloads-fdm.png" alt="FDM" /></p>
 
 <p>Ele tanto baixa arquivos <code class="language-plaintext highlighter-rouge">.torrent</code>, quanto arquivos normais</p>
 
@@ -10,9 +12,67 @@
 
 <p>Após baixar, por se tratar de um arquivo <code class="language-plaintext highlighter-rouge">.deb</code>, se seu sistema tiver um gerenciador de instalação, você poderá dar dois cliques no arquivo.</p>
 
-<p>Caso não possua um gerenciador de instalação, siga os passos para a instalação via terminal aqui mesmo em:</p>
+<p>Caso não possua um gerenciador de instalação:</p>
 
-<p><a href="/posts/instalar-arquivos-deb/" target="_blank">Como instalar arquivos .deb via terminal no linux</a></p>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><category term="utilitarios" /><category term="linux" /><summary type="html"><![CDATA[Apresento-lhes, o Free Download Manager]]></summary></entry><entry><title type="html">Como instalar arquivos .deb via terminal no linux</title><link href="http://localhost:4000/posts/instalar-arquivos-deb/" rel="alternate" type="text/html" title="Como instalar arquivos .deb via terminal no linux" /><published>2024-05-19T20:56:00-03:00</published><updated>2024-05-19T20:56:00-03:00</updated><id>http://localhost:4000/posts/instalar-arquivos-deb</id><content type="html" xml:base="http://localhost:4000/posts/instalar-arquivos-deb/"><![CDATA[<p>Abra o terminal do sistema.</p>
+<p>Acesse o terminal do sistema.</p>
+
+<p>Instale as dependências</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>ffmpeg libavdevice59
+</code></pre></div></div>
+
+<p>Acesse o diretório onde foi baixado o arquivo.</p>
+
+<p>Nesse caso aqui está em ~/Downloads</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/Downloads
+</code></pre></div></div>
+
+<p>Digite o comando dpkg -i</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dpkg <span class="nt">-i</span> freedownloadmanager.deb
+</code></pre></div></div>
+
+<p>Após isso, basta procurar pelo programa recém instalado em seu menu iniciar.</p>
+
+<p>E seja feliz.</p>
+
+<h2 id="como-adicionar-um-download-no-programa">Como adicionar um download no programa</h2>
+
+<p>No programa, existem três formas de adicionar downloads nele.</p>
+
+<ol>
+  <li>Extensão do FDM no navegador.</li>
+  <li>Arrastando a URL no programa.</li>
+  <li>Adicionando a URL manualmente.</li>
+</ol>
+
+<h2 id="1-extensão-do-fdm-no-navegador">1. Extensão do FDM no navegador</h2>
+
+<p>Com a extensão ativa em seu navegador, todo download que fizer, será jogado automaticamente para o Free Download Manager instalado em seu sistema.</p>
+
+<p>Baixe a versão desejada:</p>
+<ul>
+  <li><a href="https://addons.mozilla.org/en-US/firefox/addon/free-download-manager-addon/" target="_blank">Mozilla Firefox</a></li>
+  <li><a href="https://chrome.google.com/webstore/detail/free-download-manager-chr/ahmpjcflkgiildlgicmcieglgoilbfdp/RK%3D2/RS%3DfQzscgKGm9aMezJJ7Gf2Fcc.JSo-" target="_blank">Google Chrome</a></li>
+</ul>
+
+<h2 id="2-arrastando-a-url-no-programa">2. Arrastando a URL no programa</h2>
+
+<p>Todo link que aparece no navegador, pode ser arrastado.</p>
+
+<p>Se você arrastar o link até o programa, ele será capturado e iniciado o download.</p>
+
+<h2 id="3-adicionando-a-url-manualmente">3. Adicionando a URL manualmente</h2>
+
+<p>Clique no + que fica na região superior esquerda do programa.</p>
+
+<p>Será aberta uma janela, cole o URL nela, e clique em Ok.</p>
+
+<p><img src="/assets/screenshots/adicao-url-fdm.png" alt="Add URL FDM" /></p>
+
+<p>E então será exibido o tanto de espaço que será utilizado pelo arquivo de Download, e a escolha do diretório.</p>
+
+<p><img src="/assets/screenshots/baixando-via-url-fdm.png" alt="Add URL FDM" /></p>
+
+<p>Decida e seja feliz.</p>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><category term="utilitarios" /><category term="linux" /><summary type="html"><![CDATA[Apresento-lhes, o Free Download Manager]]></summary></entry><entry><title type="html">Como instalar arquivos .deb via terminal no linux</title><link href="http://localhost:4000/posts/instalar-arquivos-deb/" rel="alternate" type="text/html" title="Como instalar arquivos .deb via terminal no linux" /><published>2024-05-19T20:56:00-03:00</published><updated>2024-05-19T20:56:00-03:00</updated><id>http://localhost:4000/posts/instalar-arquivos-deb</id><content type="html" xml:base="http://localhost:4000/posts/instalar-arquivos-deb/"><![CDATA[<p>Abra o terminal do sistema.</p>
 
 <p>Acesse o diretório onde foi baixado o arquivo.</p>
 
