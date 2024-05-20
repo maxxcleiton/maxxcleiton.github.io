@@ -1,67 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linux Sincero | Configurando um pendrive bootável com o Ventoy no linux</title>
-  
-  <link rel="stylesheet" href="/assets/css/post.css" />
-  <link rel="stylesheet" href="/assets/css/syntax.css" />
-  
-  <link rel="stylesheet" href="/assets/css/common.css" />
-  <script src="/assets/js/categories.js"></script>
-  <script>
-    const currentTheme = localStorage.getItem("theme");
-    if (currentTheme) {
-      document.documentElement.setAttribute(
-        "data-theme",
-        localStorage.getItem("theme")
-      );
-    }
-  </script>
-  
-  <script defer src="/assets/js/lbox.js"></script>
-  
-</head>
-
-  <body>
-    <main>
-      <header>
-  <a class="site-title" href="/">Linux Sincero</a>
-  <!-- dark/light mode -->
-  <span id="dark-mode-toggle" style="cursor: pointer">
-    <svg
-      stroke="currentColor"
-      fill="currentColor"
-      stroke-width="0"
-      viewBox="0 0 16 16"
-      height="1.2em"
-      width="1.2em"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 13V2a6 6 0 1 1 0 12z"
-      ></path>
-    </svg>
-  </span>
-</header>
-
-      <section class="article">
-        <div class="article-header">
-          <h2 class="article-title">Configurando um pendrive bootável com o Ventoy no linux</h2>
-          <small class="date">02 Oct 2023</small>
-          <div class="categories">
-            
-            <a href="#!" class="category">blogging</a>
-            
-            <a href="#!" class="category">linux</a>
-            
-            <a href="#!" class="category">utilitario</a>
-            
-          </div>
-        </div>
-        <div class="content"><h1 id="o-que-é-o-ventoy">O que é o Ventoy</h1>
+I"�
+<h1 id="o-que-é-o-ventoy">O que é o Ventoy</h1>
 
 <p>Ventoy é um substituto ao <code class="language-plaintext highlighter-rouge">rufus</code> do Windows.</p>
 
@@ -120,19 +58,4 @@
 <p>Após aguardar o tempo necessário para a cópia, o pendrive estará pronto para uso.</p>
 
 <p>Quando bootar o pendrive na inicialização do sistema, ele perguntará qual dos sistemas (arquivos <code class="language-plaintext highlighter-rouge">.iso</code> que você colocou) deseja instalar.</p>
-</div>
-      </section>
-      <footer>
-  <p>&copy; 2023 - 2024 | Linux Sincero</p>
-</footer>
-<script src="/assets/js/mode.js" defer></script>
-
-    </main>
-    <section id="category-modal-bg"></section>
-<section id="category-modal">
-  <h1 id="category-modal-title"></h1>
-  <section id="category-modal-content"></section>
-</section>
-
-  </body>
-</html>
+:ET

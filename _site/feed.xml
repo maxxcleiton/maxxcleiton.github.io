@@ -1,118 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-18T00:13:45-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Linux Sincero</title><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><entry><title type="html">Configurando um pendrive bootável com o Ventoy no linux</title><link href="http://localhost:4000/posts/ventoy-on-linux/" rel="alternate" type="text/html" title="Configurando um pendrive bootável com o Ventoy no linux" /><published>2023-10-02T14:26:00-03:00</published><updated>2023-10-02T14:26:00-03:00</updated><id>http://localhost:4000/posts/ventoy-on-linux</id><content type="html" xml:base="http://localhost:4000/posts/ventoy-on-linux/"><![CDATA[<ul>
-  <li><a href="#o-que-é-o-ventoy">O que é o Ventoy</a>
-    <ul>
-      <li><a href="#como-baixar-o-ventoy-no-linux">Como baixar o Ventoy no Linux</a></li>
-      <li><a href="#como-descompactar-o-ventoy-no-linux">Como descompactar o Ventoy no Linux</a></li>
-      <li><a href="#como-identificar-a-unidade-do-sistema-do-pendrive">Como identificar a unidade do sistema do pendrive</a></li>
-      <li><a href="#instalando-o-ventoy-no-pendrive-escolhido">Instalando o Ventoy no pendrive escolhido</a></li>
-    </ul>
-  </li>
-</ul>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-19T21:26:57-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Linux Sincero</title><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><entry><title type="html">O melhor gerenciador de downloads do linux</title><link href="http://localhost:4000/posts/free-download-manager/" rel="alternate" type="text/html" title="O melhor gerenciador de downloads do linux" /><published>2024-05-19T21:24:00-03:00</published><updated>2024-05-19T21:24:00-03:00</updated><id>http://localhost:4000/posts/free-download-manager</id><content type="html" xml:base="http://localhost:4000/posts/free-download-manager/"><![CDATA[<p>Apresento-lhes, o Free Download Manager</p>
 
-<h1 id="o-que-é-o-ventoy">O que é o Ventoy</h1>
+<p>Ele tanto baixa arquivos <code class="language-plaintext highlighter-rouge">.torrent</code>, quanto arquivos normais</p>
 
-<p>Ventoy é um substituto ao <code class="language-plaintext highlighter-rouge">rufus</code> do Windows.
-Ele serve para tornar um pendrive bootável (utilizamos ele para instalar um S.O. (S.O.: Sistema Operacional)).
-<br />
-Ele atua diferente do rufus, o rufus instala apenas um sistema no pendrive, já o Ventoy permite o uso/instalação de vários sistemas por pendrive, sendo possível por ex. ter 3-4 ou mais sistemas no pendrive, só dependendo da capacidade de armazenamento do mesmo.</p>
+<p>Muitas vezes vamos baixar alguns arquivos mais pesados pelo navegador, e a internet inventa de dar alguma queda aleatória, assim comprometendo nosso download que demorou 10 minutos para quase estar finalizado.</p>
+
+<h2 id="como-instalar-no-debianubuntu">Como instalar no Debian/Ubuntu</h2>
+
+<p>Baixe por <a href="https://www.freedownloadmanager.org/pt/download-fdm-for-linux.html" target="_blank">aqui</a></p>
+
+<p>Após baixar, por se tratar de um arquivo <code class="language-plaintext highlighter-rouge">.deb</code>, se seu sistema tiver um gerenciador de instalação, você poderá dar dois cliques no arquivo.</p>
+
+<p>Caso não possua um gerenciador de instalação, siga os passos para a instalação via terminal aqui mesmo em:</p>
+
+<p><a href="/posts/instalar-arquivos-deb/" target="_blank">Como instalar arquivos .deb via terminal no linux</a></p>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><category term="utilitarios" /><category term="linux" /><summary type="html"><![CDATA[Apresento-lhes, o Free Download Manager]]></summary></entry><entry><title type="html">Como instalar arquivos .deb via terminal no linux</title><link href="http://localhost:4000/posts/instalar-arquivos-deb/" rel="alternate" type="text/html" title="Como instalar arquivos .deb via terminal no linux" /><published>2024-05-19T20:56:00-03:00</published><updated>2024-05-19T20:56:00-03:00</updated><id>http://localhost:4000/posts/instalar-arquivos-deb</id><content type="html" xml:base="http://localhost:4000/posts/instalar-arquivos-deb/"><![CDATA[<p>Abra o terminal do sistema.</p>
+
+<p>Acesse o diretório onde foi baixado o arquivo.</p>
+
+<p>Nesse caso aqui está em ~/Downloads</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>Downloads
+</code></pre></div></div>
+
+<p>Digite o comando dpkg -i</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dpkg <span class="nt">-i</span> &lt;nome-do-arquivo&gt;.deb
+</code></pre></div></div>
+
+<p>Seja feliz.</p>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><category term="blogging" /><category term="linux" /><category term="utilitario" /><category term="blogging" /><category term="ventoy" /><category term="linux" /><summary type="html"><![CDATA[Abra o terminal do sistema.]]></summary></entry><entry><title type="html">Configurando um pendrive bootável com o Ventoy no linux</title><link href="http://localhost:4000/posts/ventoy-on-linux/" rel="alternate" type="text/html" title="Configurando um pendrive bootável com o Ventoy no linux" /><published>2023-10-02T14:26:00-03:00</published><updated>2023-10-02T14:26:00-03:00</updated><id>http://localhost:4000/posts/ventoy-on-linux</id><content type="html" xml:base="http://localhost:4000/posts/ventoy-on-linux/"><![CDATA[<h1 id="o-que-é-o-ventoy">O que é o Ventoy</h1>
+
+<p>Ventoy é um substituto ao <code class="language-plaintext highlighter-rouge">rufus</code> do Windows.</p>
+
+<p>Ele serve para tornar um pendrive bootável (utilizamos ele para instalar um SO).</p>
+
+<blockquote>
+  <p>SO: Sistema Operacional</p>
+</blockquote>
+
+<p>Ele atua diferente do rufus, o rufus instala apenas um sistema no pendrive, já o Ventoy permite o uso/instalação de vários sistemas por pendrive, sendo possível por ex. ter 3-4 ou mais sistemas no pendrive, só dependendo da capacidade de armazenamento do mesmo.</p>
 
 <h2 id="como-baixar-o-ventoy-no-linux">Como baixar o Ventoy no Linux</h2>
 
 <p>Primeiro, baixe o arquivo mais atualizado no <a href="https://www.ventoy.net/en/download.html">site oficial</a>:</p>
 
 <p>Ou baixe direto a versão linux:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://sinalbr.dl.sourceforge.net/project/ventoy/v1.0.95/ventoy-1.0.95-linux.tar.gz
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://tenet.dl.sourceforge.net/project/ventoy/v1.0.98/ventoy-1.0.98-linux.tar.gz?viasf<span class="o">=</span>1
 </code></pre></div></div>
 
 <h2 id="como-descompactar-o-ventoy-no-linux">Como descompactar o Ventoy no Linux</h2>
+
 <p>Acesse a pasta onde baixou o arquivo, e descompacte o mesmo (outras formas de descompactação também são bem-vindas)</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">tar </span>xf ventoy-1.0.95-linux.tar.gz
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">tar </span>xf ventoy-1.0.98-linux.tar.gz
 </code></pre></div></div>
 
 <p>Acesse a nova pasta gerada</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>ventoy-1.0.95
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>ventoy-1.0.98
 </code></pre></div></div>
 
-<h2 id="como-identificar-a-unidade-do-sistema-do-pendrive">Como identificar a unidade do sistema do pendrive</h2>
-<p>Localize a unidade do pendrive no sistema</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fdisk <span class="nt">-l</span>
+<p>Execute o Ventoy</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./VentoyGUI.x86_64
 </code></pre></div></div>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Output:
-Disco /dev/sdc: 14,88 GiB, 15980298240 bytes, 31211520 setores
-Disk model: Flash Disk      
-Unidades: setor de 1 <span class="k">*</span> 512 <span class="o">=</span> 512 bytes
-Tamanho de setor <span class="o">(</span>lógico/físico<span class="o">)</span>: 512 bytes / 512 bytes
-Tamanho E/S <span class="o">(</span>mínimo/ótimo<span class="o">)</span>: 512 bytes / 512 bytes
-Tipo de rótulo <span class="k">do </span>disco: dos
-Identificador <span class="k">do </span>disco: 0x47c9a400
-</code></pre></div></div>
-<p>No meu caso é o <code class="language-plaintext highlighter-rouge">/dev/sdc</code>.</p>
-
-<h2 id="instalando-o-ventoy-no-pendrive-escolhido">Instalando o Ventoy no pendrive escolhido</h2>
-<p>Agora que localizei, vou instalar o Ventoy nele:</p>
 <blockquote>
-  <p>Lembrando que estou no diretório da pasta descompactada do Ventoy</p>
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./Ventoy2Disk.sh <span class="nt">-i</span> /dev/sdc
-</code></pre></div>  </div>
+  <p>Coloque a senha de super administrador se for requisitada.</p>
 </blockquote>
 
-<p>Ele irá avisar que todos os dados do dispositivo serão apagados, e pede sua confirmação.
-Aperte <code class="language-plaintext highlighter-rouge">y</code> seguido de <code class="language-plaintext highlighter-rouge">Enter</code> para continuar.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Attention:
-You will <span class="nb">install </span>Ventoy to /dev/sdc.
-All the data on the disk /dev/sdc will be lost!!!
+<p>O Ventoy será iniciado.</p>
 
-Continue? <span class="o">(</span>y/n<span class="o">)</span>
-</code></pre></div></div>
+<p>E então plugue no computador, o seu PENDRIVE USB.</p>
 
-<p>Ele pergunta uma segunda vez, aperte <code class="language-plaintext highlighter-rouge">y</code> seguido de <code class="language-plaintext highlighter-rouge">Enter</code> para continuar.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>All the data on the disk /dev/sdc will be lost!!!
-Double-check. Continue? <span class="o">(</span>y/n<span class="o">)</span>
-</code></pre></div></div>
+<p>Após isso, clique no botão de <strong>refresh</strong>.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Output:
-Create partitions on /dev/sdc by parted <span class="k">in </span>MBR style ...
-Done
-Wait <span class="k">for </span>partitions ...
-partition exist OK
-create efi fat fs /dev/sdc2 ...
-mkfs.fat 4.2 <span class="o">(</span>2021-01-31<span class="o">)</span>
-success
-Wait <span class="k">for </span>partitions ...
-/dev/sdc1 exist OK
-/dev/sdc2 exist OK
-partition exist OK
-Format partition 1 /dev/sdc1 ...
-mkexfatfs 1.3.0
-Creating... <span class="k">done</span><span class="nb">.</span>
-Flushing... <span class="k">done</span><span class="nb">.</span>
-File system created successfully.
-mkexfatfs success
-writing data to disk ...
-<span class="nb">sync </span>data ...
-esp partition processing ...
+<p>Seu PENDRIVE deverá aparecer na lista, e então clique em <strong><em>Install</em></strong>.</p>
 
-Install Ventoy to /dev/sdc successfully finished.
-</code></pre></div></div>
+<p>Após isso, seu pendrive estará bootável e pronto para ser utilizado.</p>
 
-<p>Parabéns, a instalação ocorreu com sucesso!
-<br />
-Agora você só precisa copiar as ISOs de seus sistemas baixados e mandar direto pro pendrive, que na hora de instalar ele perguntará qual dos sistemas você deseja instalar.</p>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><category term="blogging" /><category term="linux" /><category term="utilitario" /><category term="blogging" /><category term="ventoy" /><category term="linux" /><category term="usb" /><summary type="html"><![CDATA[O que é o Ventoy Como baixar o Ventoy no Linux Como descompactar o Ventoy no Linux Como identificar a unidade do sistema do pendrive Instalando o Ventoy no pendrive escolhido]]></summary></entry><entry><title type="html">Hello World! (by Mando’s)</title><link href="http://localhost:4000/posts/hello-homelab/" rel="alternate" type="text/html" title="Hello World! (by Mando’s)" /><published>2023-10-01T20:33:00-03:00</published><updated>2023-10-01T20:33:00-03:00</updated><id>http://localhost:4000/posts/hello-homelab</id><content type="html" xml:base="http://localhost:4000/posts/hello-homelab/"><![CDATA[<h1 id="meu-primeiro-post">Meu primeiro post</h1>
+<h2 id="como-utilizar">Como utilizar</h2>
 
-<p>Faala, esse é meu primeiro post ever, utilizando essa ferrameta que venho a algum tempo estudando (jekyll).</p>
+<p>Você deverá mover alguma distro em formato <code class="language-plaintext highlighter-rouge">.iso</code> para dentro do pendrive.</p>
 
-<p>Escrevo esse post enquanto estou numa fase importante de minha vida (começo de carreira) onde devo provar meu valor mais do que nunca.</p>
+<p>Após aguardar o tempo necessário para a cópia, o pendrive estará pronto para uso.</p>
 
-<p>Sempre quis ter um blog pessoal e só não conseguia assimilar a melhor forma de fazer-lo, aqui utilizando o Jekyll e usando o modelo de Markdown, com git commits para meu repositório, me sinto em casa, pois como um Infra’s guy (trabalho no setor de infraestrutura em uma empresa de tecnologia), commits frequentes e documentações utilizando markdown são como dirigir um carro sendo Uber.</p>
+<p>Quando bootar o pendrive na inicialização do sistema, ele perguntará qual dos sistemas (arquivos <code class="language-plaintext highlighter-rouge">.iso</code> que você colocou) deseja instalar.</p>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><category term="blogging" /><category term="linux" /><category term="utilitario" /><category term="blogging" /><category term="ventoy" /><category term="linux" /><category term="usb" /><summary type="html"><![CDATA[O que é o Ventoy]]></summary></entry><entry><title type="html">Hello World! (by Max)</title><link href="http://localhost:4000/posts/hello-homelab/" rel="alternate" type="text/html" title="Hello World! (by Max)" /><published>2023-10-01T20:33:00-03:00</published><updated>2023-10-01T20:33:00-03:00</updated><id>http://localhost:4000/posts/hello-homelab</id><content type="html" xml:base="http://localhost:4000/posts/hello-homelab/"><![CDATA[<h2 id="meu-primeiro-post">Meu primeiro post</h2>
+
+<p>Faala, esse é meu primeiro post ever, utilizando essa ferramenta que venho a algum tempo estudando (jekyll).</p>
+
+<p>Escrevo esse post enquanto estou numa fase importante de minha vida (começo de carreira).</p>
+
+<p>Sempre quis ter um blog pessoal e só não conseguia assimilar a melhor forma de fazer-lo, aqui utilizando o Jekyll e usando o modelo de Markdown, com git commits para meu repositório, me sinto em casa, pois no trabalho aqui, os commits são frequentes e fazer documentações utilizando markdown são como dirigir um carro sendo Uber.</p>
 
 <p>Vou assumir uma postura de pouca expectativa e 0 pressa para com o conteúdo do site, pois assim consigo manter a longo prazo.</p>
 
-<p>Se você leu até aqui, thank you very much, ma friend!
+<h2 id="despedida">Despedida</h2>
+
+<p>Se você leu até aqui, thank you very much, my friend!
 Me mande mensagem em alguma rede social e diga que veio pelo site, ficarei muito surpreso e feliz kkkk</p>
 
 <p>Tamo junto,
-Mando.</p>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><category term="blogging" /><category term="blogging" /><category term="personal" /><summary type="html"><![CDATA[Meu primeiro post]]></summary></entry><entry><title type="html">Jekyll Markdown</title><link href="http://localhost:4000/posts/jekyll-markdown/" rel="alternate" type="text/html" title="Jekyll Markdown" /><published>2021-11-04T00:00:00-03:00</published><updated>2021-11-04T00:00:00-03:00</updated><id>http://localhost:4000/posts/jekyll-markdown</id><content type="html" xml:base="http://localhost:4000/posts/jekyll-markdown/"><![CDATA[<p>Text can be <strong>bold</strong>, <em>italic</em>, <del>strikethrough</del> or <code class="language-plaintext highlighter-rouge">keyword</code></p>
+Max.</p>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><category term="blogging" /><category term="blogging" /><category term="personal" /><summary type="html"><![CDATA[Meu primeiro post]]></summary></entry><entry><title type="html">Markdown do Jekyll</title><link href="http://localhost:4000/posts/jekyll-markdown/" rel="alternate" type="text/html" title="Markdown do Jekyll" /><published>2021-11-04T00:00:00-03:00</published><updated>2021-11-04T00:00:00-03:00</updated><id>http://localhost:4000/posts/jekyll-markdown</id><content type="html" xml:base="http://localhost:4000/posts/jekyll-markdown/"><![CDATA[<p>Text can be <strong>bold</strong>, <em>italic</em>, <del>strikethrough</del> or <code class="language-plaintext highlighter-rouge">keyword</code></p>
 
 <p><a href="./another-page.html">Link to another page</a>.</p>
 
@@ -277,18 +263,4 @@ Mando.</p>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.co
 </code></pre></div></div>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The final element.
-</code></pre></div></div>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><category term="jekyll" /><category term="Test Post" /><category term="first post" /><summary type="html"><![CDATA[Text can be bold, italic, strikethrough or keyword]]></summary></entry><entry><title type="html">The Purpose of Education</title><link href="http://localhost:4000/posts/the-purpose-of-education/" rel="alternate" type="text/html" title="The Purpose of Education" /><published>1948-12-12T07:18:00-03:00</published><updated>1948-12-12T07:18:00-03:00</updated><id>http://localhost:4000/posts/the-purpose-of-education</id><content type="html" xml:base="http://localhost:4000/posts/the-purpose-of-education/"><![CDATA[<p>As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Most of the “brethren” think that education should equip them with the proper instruments of exploitation so that they can forever trample over the masses. Still others think that education should furnish them with noble ends rather than means to an end.</p>
-
-<p><img src="https://picsum.photos/800/300" alt="alt" /></p>
-
-<p>It seems to me that education has a two-fold function to perform in the life of man and in society: the one is utility and the other is culture. Education must enable a man to become more efficient, to achieve with increasing facility the ligitimate goals of his life.</p>
-
-<p>Education must also train one for quick, resolute and effective thinking. To think incisively and to think for one’s self is very difficult. We are prone to let our mental life become invaded by legions of half truths, prejudices, and propaganda. At this point, I often wonder whether or not education is fulfilling its purpose. A great majority of the so-called educated people do not think logically and scientifically. Even the press, the classroom, the platform, and the pulpit in many instances do not give us objective and unbiased truths. To save man from the morass of propaganda, in my opinion, is one of the chief aims of education. Education must enable one to sift and weigh evidence, to discern the true from the false, the real from the unreal, and the facts from the fiction.</p>
-
-<p>The function of education, therefore, is to teach one to think intensively and to think critically. But education which stops with efficiency may prove the greatest menace to society. The most dangerous criminal may be the man gifted with reason, but with no morals.</p>
-
-<p>The late Eugene Talmadge, in my opinion, possessed one of the better minds of Georgia, or even America. Moreover, he wore the Phi Beta Kappa key. By all measuring rods, Mr. Talmadge could think critically and intensively; yet he contends that I am an inferior being. Are those the types of men we call educated?</p>
-
-<p>We must remember that intelligence is not enough. Intelligence plus character–that is the goal of true education. The complete education gives one not only power of concentration, but worthy objectives upon which to concentrate. The broad education will, therefore, transmit to one not only the accumulated knowledge of the race but also the accumulated experience of social living.</p>
-
-<p>If we are not careful, our colleges will produce a group of close-minded, unscientific, illogical propagandists, consumed with immoral acts. Be careful, “brethren!” Be careful, teachers!</p>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><category term="fiction" /><category term="jekyll" /><summary type="html"><![CDATA[As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Most of the “brethren” think that education should equip them with the proper instruments of exploitation so that they can forever trample over the masses. Still others think that education should furnish them with noble ends rather than means to an end.]]></summary></entry></feed>
+</code></pre></div></div>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><category term="jekyll" /><summary type="html"><![CDATA[Text can be bold, italic, strikethrough or keyword]]></summary></entry></feed>

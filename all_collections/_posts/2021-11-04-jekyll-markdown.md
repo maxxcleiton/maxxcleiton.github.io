@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Jekyll Markdown
+title: Markdown do Jekyll
 date: 2021-11-04
-categories: ["jekyll", "Test Post", "first post"]
+categories: ["jekyll"]
 ---
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`
