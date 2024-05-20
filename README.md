@@ -1,4 +1,12 @@
-# Jekyll Theme Serial Programmer
+# Esse repositório é reponsável pelo meu blog
+
+Acesse:
+
+https://maxxcleiton.github.io/
+
+Daqui pra baixo, é o README do theme do Jekyll que utilizei.
+
+## Jekyll Theme Serial Programmer
 
 > A Jekyll theme for serial programmers (-.-)
 
