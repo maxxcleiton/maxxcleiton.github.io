@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linux Sincero | Como criar atalhos scrcpy com fio/sem fio</title>
+  
+  <link rel="stylesheet" href="/assets/css/post.css" />
+  <link rel="stylesheet" href="/assets/css/syntax.css" />
+  
+  <link rel="stylesheet" href="/assets/css/common.css" />
+  <script src="/assets/js/categories.js"></script>
+  <script>
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme) {
+      document.documentElement.setAttribute(
+        "data-theme",
+        localStorage.getItem("theme")
+      );
+    }
+  </script>
+  
+  <script defer src="/assets/js/lbox.js"></script>
+  
+</head>
+
+  <body>
+    <main>
+      <header>
+  <a class="site-title" href="/">Linux Sincero</a>
+  <!-- dark/light mode -->
+  <span id="dark-mode-toggle" style="cursor: pointer">
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      stroke-width="0"
+      viewBox="0 0 16 16"
+      height="1.2em"
+      width="1.2em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 13V2a6 6 0 1 1 0 12z"
+      ></path>
+    </svg>
+  </span>
+</header>
+
+      <section class="article">
+        <div class="article-header">
+          <h2 class="article-title">Como criar atalhos scrcpy com fio/sem fio</h2>
+          <small class="date">20 May 2024</small>
+          <div class="categories">
+            
+            <a href="#!" class="category">blogging</a>
+            
+            <a href="#!" class="category">linux</a>
+            
+            <a href="#!" class="category">utilitario</a>
+            
+          </div>
+        </div>
+        <div class="content"><p><img src="/assets/screenshots/atalhos-scrcpy.png" alt="Print atalhos scrcpy" /></p>
+
+<h2 id="o-que-é-o-scrcpy">O que é o scrcpy</h2>
+
+<p>É um utilitário que espelha a tela de seu Android no computador, está disponível nas versões Windows e Linux.
+Você pode conectar um ou vários tablets/smartphones ao mesmo tempo.</p>
+
+<h2 id="como-utilizar">Como utilizar</h2>
+
+<p>Requisitos:</p>
+
+<ul>
+  <li>Ter o scrcpy devidamente instalado em seu computador</li>
+  <li>Depuração USB ativada no dispositivo Android</li>
+  <li>Cabo USB original</li>
+</ul>
+
+<p>Instruções:</p>
+
+<ol>
+  <li>Conecte o cabo USB no dispositivo Android e no computador.</li>
+  <li>Abra o terminal e digite: <code class="language-plaintext highlighter-rouge">scrcpy</code></li>
+  <li>Clique em <strong><em>Permitir</em></strong> quando aparecer a mensagem no celular: <em>Permitir utilizar depuração USB no computador</em></li>
+</ol>
+
+<h2 id="instalar-o-scrcpy">Instalar o scrcpy</h2>
+
+<h3 id="versão-padrão-sem-atalhos">Versão padrão (sem atalhos)</h3>
+<p>Caso só precise usar o scrcpy diretamente do terminal, basta rodar:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install</span> <span class="nt">-y</span> scrcpy
+</code></pre></div></div>
+
+<h3 id="versão-mais-atualizada-com-atalhos">Versão mais atualizada (com atalhos)</h3>
+
+<p>Caso queira ter atalhos na Área de trabalho com fácil acesso, podendo conectar mais de um dispositivo ao mesmo tempo (tanto via USB, quanto sem fio) você deverá instalar a versão mais nova do scrcpy. Pois o package padrão normalmente vem desatualizado.</p>
+
+<p>Instale as dependências:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install</span> <span class="nt">-y</span> ffmpeg libsdl2-2.0-0 adb wget <span class="se">\</span>
+                 gcc git pkg-config meson ninja-build libsdl2-dev <span class="se">\</span>
+                 libavcodec-dev libavdevice-dev libavformat-dev libavutil-dev <span class="se">\</span>
+                 libswresample-dev libusb-1.0-0 libusb-1.0-0-dev
+</code></pre></div></div>
+
+<p>Clone o repositório e rode o script de instalação:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/Genymobile/scrcpy
+<span class="nb">cd </span>scrcpy
+./install_release.sh
+</code></pre></div></div>
+
+<p>Caso precise atualizar o scrcpy com a mais nova versão:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>scrcpy
+git pull
+./install_release.sh
+</code></pre></div></div>
+
+<p>Caso queira desinstalar:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>ninja <span class="nt">-Cbuild-auto</span> uninstall
+</code></pre></div></div>
+<h2 id="criar-os-atalhos-na-área-de-trabalho">Criar os atalhos na Área de trabalho</h2>
+
+<p>Faça o git clone do seguinte repositório:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/maxxcleiton/scrcpy-documentation.git
+</code></pre></div></div>
+
+<p>Envie os 4 arquivos de dentro da pasta <code class="language-plaintext highlighter-rouge">/Atalhos</code>, para a sua Área de trabalho</p>
+
+<p>Em cada um dos 4 arquivos (atalhos) faça o seguinte:</p>
+
+<ol>
+  <li>
+    <p>Clique com o botão direito do mouse no arquivo, e selecione <strong><em>Allow Launching (Permitir a execução)</em></strong>;</p>
+  </li>
+  <li>
+    <p>(Opcional) Alterar imagem: Clique com o botão direito do mouse no arquivo, selecione <strong><em>Propriedades</em></strong>, clique no ícone padrão e procure pela imagem respectiva na pasta que você fez o clone deste repositório, em <code class="language-plaintext highlighter-rouge">/Imagens</code></p>
+
+    <ol>
+      <li>
+        <p>Nos atalhos com nome “<strong>primeiro</strong>”: selecione a imagem “primeiro-dispositivo.png”;</p>
+      </li>
+      <li>
+        <p>Nos atalhos com nome “<strong>adicionar</strong>”: selecione a imagem “adicionar-dispositivo.png”;</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p>Envie a pasta <code class="language-plaintext highlighter-rouge">/Scripts-scrcpy</code> para a sua home.</p>
+
+<p>Agora só executar cada um dos atalhos disponíveis.</p>
+
+<h2 id="como-utilizar-o-smartphonetablet-sem-fio">Como utilizar o smartphone/tablet sem fio</h2>
+
+<ol>
+  <li>Conecte o smartphone/tablet Android no computador via USB</li>
+  <li>Execute o atalho: Primeiro Dispositivo [Rede]</li>
+  <li>Quando abrir a tela, pode puxar o cabo e a tela continuará ativa</li>
+</ol>
+
+<blockquote>
+  <p>Lembrar de conferir os requisitos no começo dessa documentação.</p>
+</blockquote>
+
+<h2 id="como-espelhar-mais-de-um-smartphonetablet-ao-mesmo-tempo">Como espelhar mais de um smartphone/tablet ao mesmo tempo</h2>
+
+<ol>
+  <li>Repita os passos de <strong>Como utilizar o smartphone/tablet sem fio</strong>;</li>
+  <li>Conecte outro dispositivo no computador</li>
+  <li>Execute o atalho: Adicionar Dispositivo [Rede]
+    <blockquote>
+      <p>Espelhar mais de um dispositivo também serve para o método com fio</p>
+    </blockquote>
+  </li>
+</ol>
+
+<p>Fonte: https://github.com/Genymobile/scrcpy/blob/master/doc/linux.md</p>
+</div>
+      </section>
+      <footer>
+  <p>&copy; 2023 - 2024 | Linux Sincero</p>
+</footer>
+<script src="/assets/js/mode.js" defer></script>
+
+    </main>
+    <section id="category-modal-bg"></section>
+<section id="category-modal">
+  <h1 id="category-modal-title"></h1>
+  <section id="category-modal-content"></section>
+</section>
+
+  </body>
+</html>
