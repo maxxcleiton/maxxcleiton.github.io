@@ -6,11 +6,14 @@ author:
   name: Max Cleiton
   email: maxcleiton@live.com
 
+url: "https://maxxcleiton.github.io/"
+
 plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-sitemap
 
 collections_dir: all_collections
 collections:
