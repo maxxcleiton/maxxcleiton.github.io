@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-20T10:04:35-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Linux Sincero</title><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><entry><title type="html">Como criar atalhos scrcpy com fio/sem fio</title><link href="http://localhost:4000/posts/criar-atalhos-scrcpy/" rel="alternate" type="text/html" title="Como criar atalhos scrcpy com fio/sem fio" /><published>2024-05-20T09:50:00-03:00</published><updated>2024-05-20T09:50:00-03:00</updated><id>http://localhost:4000/posts/criar-atalhos-scrcpy</id><content type="html" xml:base="http://localhost:4000/posts/criar-atalhos-scrcpy/"><![CDATA[<p><img src="/assets/screenshots/atalhos-scrcpy.png" alt="Print atalhos scrcpy" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-20T23:06:29-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Linux Sincero</title><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><entry><title type="html">Como não conectar ao Wifi durante a instalação do Windows 11</title><link href="http://localhost:4000/posts/bypass-senha-windows-11/" rel="alternate" type="text/html" title="Como não conectar ao Wifi durante a instalação do Windows 11" /><published>2024-05-20T22:48:00-03:00</published><updated>2024-05-20T22:48:00-03:00</updated><id>http://localhost:4000/posts/bypass-senha-windows-11</id><content type="html" xml:base="http://localhost:4000/posts/bypass-senha-windows-11/"><![CDATA[<p>Durante a instalação do Windows 11, ele nos obriga a conectar a alguma rede Wifi.</p>
+
+<p>E isso por si só estaria tudo bem, se o mesmo não nos obrigasse logo depois a conectar com um email no sistema, e não nos dá opção de “não adicionar email agora”, ou “não conectar na rede agora”.</p>
+
+<p>Inclusive a instalação sem a rede, é <strong>muito</strong> mais rápida, pois não ficam infinitas telas de “preparando o seu sistema”.</p>
+
+<h2 id="como-fazer">Como fazer</h2>
+
+<p>Durante a instalação, no momento que ele pedir para conectar a alguma rede wifi, tecle:</p>
+
+<p><strong>SHIFT + F10</strong></p>
+
+<p>Será aberta a janela do CMD, clique nela, e rode o seguinte comando:</p>
+
+<p><code class="language-plaintext highlighter-rouge">oobe\BypassNRO</code></p>
+
+<p>Após rodar o comando, a instalação será reiniciada, e aparecerá a nossa desejada opção “Não tenho rede.”</p>
+
+<p>Assim, marcando essa opção e seguindo com a instalação offline sem atrasos e chatisses.</p>
+
+<p>Seja feliz.</p>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><category term="utilitarios" /><category term="linux" /><summary type="html"><![CDATA[Durante a instalação do Windows 11, ele nos obriga a conectar a alguma rede Wifi.]]></summary></entry><entry><title type="html">Como criar atalhos scrcpy com fio/sem fio</title><link href="http://localhost:4000/posts/criar-atalhos-scrcpy/" rel="alternate" type="text/html" title="Como criar atalhos scrcpy com fio/sem fio" /><published>2024-05-20T09:50:00-03:00</published><updated>2024-05-20T09:50:00-03:00</updated><id>http://localhost:4000/posts/criar-atalhos-scrcpy</id><content type="html" xml:base="http://localhost:4000/posts/criar-atalhos-scrcpy/"><![CDATA[<p><img src="/assets/screenshots/atalhos-scrcpy.png" alt="Print atalhos scrcpy" /></p>
 
 <h2 id="o-que-é-o-scrcpy">O que é o scrcpy</h2>
 

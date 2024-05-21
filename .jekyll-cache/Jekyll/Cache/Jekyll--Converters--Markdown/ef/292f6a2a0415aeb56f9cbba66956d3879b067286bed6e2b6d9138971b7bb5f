@@ -1,0 +1,22 @@
+I"<p>Durante a instalação do Windows 11, ele nos obriga a conectar a alguma rede Wifi.</p>
+
+<p>E isso por si só estaria tudo bem, se o mesmo não nos obrigasse logo depois a conectar com um email no sistema, e não nos dá opção de “não adicionar email agora”, ou “não conectar na rede agora”.</p>
+
+<p>Inclusive a instalação sem a rede, é <strong>muito</strong> mais rápida, pois não ficam infinitas telas de “preparando o seu sistema”.</p>
+
+<h2 id="como-fazer">Como fazer</h2>
+
+<p>Durante a instalação, no momento que ele pedir para conectar a alguma rede wifi, tecle:</p>
+
+<p><strong>SHIFT + F10</strong></p>
+
+<p>Será aberta a janela do CMD, clique nela, e rode o seguinte comando:</p>
+
+<p><code class="language-plaintext highlighter-rouge">oobe\BypassNRO</code></p>
+
+<p>Após rodar o comando, a instalação será reiniciada, e aparecerá a nossa desejada opção “Não tenho rede.”</p>
+
+<p>Assim, marcando essa opção e seguindo com a instalação offline sem atrasos e chatisses.</p>
+
+<p>Seja feliz.</p>
+:ET
