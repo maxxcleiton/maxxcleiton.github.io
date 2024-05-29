@@ -14,6 +14,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-google_search_console_verification_file
 
 collections_dir: all_collections
 collections:
@@ -27,3 +28,6 @@ defaults:
       layout: "post"
       permalink: /posts/:title/
 exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md"]
+
+google_search_console:
+  verification_file_code: 6a9892984c4ee862
