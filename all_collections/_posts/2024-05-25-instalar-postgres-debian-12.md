@@ -46,6 +46,16 @@ sudo apt install pgadmin4-desktop
 sudo apt install pgadmin4-web 
 ```
 
+- Rode o seguinte para configurar o pgAdmin 4 WEB:
+
+```bash
+sudo /usr/pgadmin4/bin/setup-web.sh
+```
+
+Ele irá pedir email e senha, que será utilizado para acessar o pgAdmin4 web.
+
+E então você poderá acessar [https:127.0.0.1/pgadmin4](https:127.0.0.1/pgadmin4){:target="_blank"}
+
 ### Alterar senha do usuário padrão do postgres
 
 Agora que foi realizada a instalação, é recomendado alterar a senha do usuário root padrão que vem na instalação do PosgreSQL
@@ -101,6 +111,6 @@ Salve nos favoritos o link que aparecer.
 
 Fontes:
 
-https://www.postgresql.org/download/linux/debian/
-https://www.pgadmin.org/download/pgadmin-4-apt/
-https://stackoverflow.com/a/77839264/25248509
+[https://www.postgresql.org/download/linux/debian/](https://www.postgresql.org/download/linux/debian/){:target="_blank"}
+[https://www.pgadmin.org/download/pgadmin-4-apt/](https://www.pgadmin.org/download/pgadmin-4-apt/){:target="_blank"}
+[https://stackoverflow.com/a/77839264/25248509](https://stackoverflow.com/a/77839264/25248509){:target="_blank"}

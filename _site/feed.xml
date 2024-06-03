@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-29T10:43:07-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Linux Sincero</title><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><entry><title type="html">Como instalar o PostgreSQL e o pgadmin4 (web/desktop) no linux (Debian 12)</title><link href="http://localhost:4000/posts/instalar-postgres-debian-12/" rel="alternate" type="text/html" title="Como instalar o PostgreSQL e o pgadmin4 (web/desktop) no linux (Debian 12)" /><published>2024-05-25T21:20:00-03:00</published><updated>2024-05-25T21:20:00-03:00</updated><id>http://localhost:4000/posts/instalar-postgres-debian-12</id><content type="html" xml:base="http://localhost:4000/posts/instalar-postgres-debian-12/"><![CDATA[<p>Primeiro instale o Repository</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-06-03T15:47:18-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Linux Sincero</title><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><entry><title type="html">Como instalar o PostgreSQL e o pgadmin4 (web/desktop) no linux (Debian 12)</title><link href="http://localhost:4000/posts/instalar-postgres-debian-12/" rel="alternate" type="text/html" title="Como instalar o PostgreSQL e o pgadmin4 (web/desktop) no linux (Debian 12)" /><published>2024-05-25T21:20:00-03:00</published><updated>2024-05-25T21:20:00-03:00</updated><id>http://localhost:4000/posts/instalar-postgres-debian-12</id><content type="html" xml:base="http://localhost:4000/posts/instalar-postgres-debian-12/"><![CDATA[<p>Primeiro instale o Repository</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install</span> <span class="nt">-y</span> postgresql-common
 <span class="nb">sudo</span> /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
@@ -37,6 +37,17 @@
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>pgadmin4-web 
 </code></pre></div></div>
+
+<ul>
+  <li>Rode o seguinte para configurar o pgAdmin 4 WEB:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> /usr/pgadmin4/bin/setup-web.sh
+</code></pre></div></div>
+
+<p>Ele irá pedir email e senha, que será utilizado para acessar o pgAdmin4 web.</p>
+
+<p>E então você poderá acessar <a href="https:127.0.0.1/pgadmin4" target="_blank">https:127.0.0.1/pgadmin4</a></p>
 
 <h3 id="alterar-senha-do-usuário-padrão-do-postgres">Alterar senha do usuário padrão do postgres</h3>
 
@@ -91,9 +102,9 @@
 
 <p>Fontes:</p>
 
-<p>https://www.postgresql.org/download/linux/debian/
-https://www.pgadmin.org/download/pgadmin-4-apt/
-https://stackoverflow.com/a/77839264/25248509</p>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><category term="utilitarios" /><category term="linux" /><category term="postgres" /><category term="pgsql" /><category term="debian12" /><summary type="html"><![CDATA[Primeiro instale o Repository]]></summary></entry><entry><title type="html">Como não conectar ao Wifi durante a instalação do Windows 11</title><link href="http://localhost:4000/posts/bypass-senha-windows-11/" rel="alternate" type="text/html" title="Como não conectar ao Wifi durante a instalação do Windows 11" /><published>2024-05-20T22:48:00-03:00</published><updated>2024-05-20T22:48:00-03:00</updated><id>http://localhost:4000/posts/bypass-senha-windows-11</id><content type="html" xml:base="http://localhost:4000/posts/bypass-senha-windows-11/"><![CDATA[<p>Durante a instalação do Windows 11, ele nos obriga a conectar a alguma rede Wifi.</p>
+<p><a href="https://www.postgresql.org/download/linux/debian/" target="_blank">https://www.postgresql.org/download/linux/debian/</a>
+<a href="https://www.pgadmin.org/download/pgadmin-4-apt/" target="_blank">https://www.pgadmin.org/download/pgadmin-4-apt/</a>
+<a href="https://stackoverflow.com/a/77839264/25248509" target="_blank">https://stackoverflow.com/a/77839264/25248509</a></p>]]></content><author><name>Max Cleiton</name><email>maxcleiton@live.com</email></author><category term="utilitarios" /><category term="linux" /><category term="postgres" /><category term="pgsql" /><category term="debian12" /><summary type="html"><![CDATA[Primeiro instale o Repository]]></summary></entry><entry><title type="html">Como não conectar ao Wifi durante a instalação do Windows 11</title><link href="http://localhost:4000/posts/bypass-senha-windows-11/" rel="alternate" type="text/html" title="Como não conectar ao Wifi durante a instalação do Windows 11" /><published>2024-05-20T22:48:00-03:00</published><updated>2024-05-20T22:48:00-03:00</updated><id>http://localhost:4000/posts/bypass-senha-windows-11</id><content type="html" xml:base="http://localhost:4000/posts/bypass-senha-windows-11/"><![CDATA[<p>Durante a instalação do Windows 11, ele nos obriga a conectar a alguma rede Wifi.</p>
 
 <p>E isso por si só estaria tudo bem, se o mesmo não nos obrigasse logo depois a conectar com um email no sistema, e não nos dá opção de “não adicionar email agora”, ou “não conectar na rede agora”.</p>
 
