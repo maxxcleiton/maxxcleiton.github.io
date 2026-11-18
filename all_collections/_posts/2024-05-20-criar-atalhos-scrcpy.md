@@ -1,8 +1,8 @@
 ---
 title: Como criar atalhos scrcpy com fio/sem fio
 date: 2024-05-20 09:50:00 -03:00
-categories: [blogging,linux,utilitario]
-tags: [blogging,ventoy,linux,scrcpy,atalhos]
+categories: [linux, utilitarios, mobile]
+tags: [linux, scrcpy, android, atalhos]
 ---
 
 ![Print atalhos scrcpy](/assets/screenshots/atalhos-scrcpy.png)

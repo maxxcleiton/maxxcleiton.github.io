@@ -30,5 +30,16 @@ window.onload = function () {
     document.querySelector("#category-modal-content").innerHTML = "";
     document.querySelector("#category-modal-bg").classList.toggle("open");
     document.querySelector("#category-modal").classList.toggle("open");
-  })
+  });
+
+  const searchInput = document.querySelector("#post-search");
+  if (searchInput) {
+    searchInput.addEventListener("input", function (e) {
+      const term = e.target.value.toLowerCase().trim();
+      document.querySelectorAll(".articles .article").forEach((article) => {
+        const text = article.innerText.toLowerCase();
+        article.style.display = text.includes(term) ? "" : "none";
+      });
+    });
+  }
 };

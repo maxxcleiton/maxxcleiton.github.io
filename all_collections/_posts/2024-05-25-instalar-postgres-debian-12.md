@@ -2,7 +2,7 @@
 layout: post
 title: Como instalar o PostgreSQL e o pgadmin4 (web/desktop) no linux (Debian 12)
 date: 2024-05-25 21:20:00 -03:00
-categories: [utilitarios,linux,postgres,pgsql,debian12]
+categories: [linux, banco-de-dados]
 ---
 
 Primeiro instale o Repository

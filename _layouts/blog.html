@@ -4,6 +4,14 @@
   <body>
     <main>
       {% include header.html %} {% include bio.html %}
+      <div class="search-wrapper">
+        <input
+          type="search"
+          id="post-search"
+          placeholder="Buscar no arsenal (ex: epson, iphone, postgres, linux)..."
+          autocomplete="off"
+        />
+      </div>
       <section class="articles">
         {% for post in site.posts %}
         <article class="article">

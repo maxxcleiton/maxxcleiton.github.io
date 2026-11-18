@@ -1,8 +1,8 @@
 ---
 title: Configurando um pendrive bootável com o Ventoy no linux
 date: 2023-10-02 14:26:00 -03:00
-categories: [blogging,linux,utilitario]
-tags: [blogging,ventoy,linux,usb]
+categories: [linux, utilitarios]
+tags: [ventoy, linux, usb]
 ---
 
 # O que é o Ventoy

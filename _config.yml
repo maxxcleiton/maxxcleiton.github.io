@@ -1,6 +1,7 @@
 title: Linux Sincero
 description: "Tutoriais diretos e práticos sobre Linux, homelab, bancos de dados e utilitários."
 lang: pt-BR
+future: true
 markdown: kramdown
 
 # for atom feed

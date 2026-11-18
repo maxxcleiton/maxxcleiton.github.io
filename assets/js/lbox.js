@@ -21,3 +21,23 @@ lightbox.addEventListener("click", (e) => {
   if (e.target !== e.currentTarget) return;
   lightbox.classList.remove("active");
 });
+
+document.querySelectorAll(".article .content pre").forEach((pre) => {
+  pre.style.position = "relative";
+  const btn = document.createElement("button");
+  btn.className = "copy-code-btn";
+  btn.type = "button";
+  btn.innerText = "Copiar";
+  btn.addEventListener("click", () => {
+    const code = pre.querySelector("code");
+    const text = code ? code.innerText : pre.innerText;
+    navigator.clipboard.writeText(text.trim()).then(() => {
+      btn.innerText = "Copiado!";
+      setTimeout(() => {
+        btn.innerText = "Copiar";
+      }, 1800);
+    });
+  });
+  pre.appendChild(btn);
+});
+

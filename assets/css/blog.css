@@ -111,10 +111,29 @@ main {
 
 /* article section */
 
+.search-wrapper {
+  margin: 2.5rem 0 0 0;
+}
+#post-search {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.9rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid var(--gray-3);
+  background: var(--gray-3);
+  color: var(--white-2);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+#post-search:focus {
+  border-color: cyan;
+}
+
 .articles {
   display: grid;
   row-gap: 2rem;
-  margin: 4rem 0 3rem 0;
+  margin: 2rem 0 3rem 0;
 }
 .articles .article {
   padding: 2rem;

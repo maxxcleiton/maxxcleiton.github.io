@@ -2,7 +2,7 @@
 layout: post
 title: Como não conectar ao Wifi durante a instalação do Windows 11
 date: 2024-05-20 22:48:00 -03:00
-categories: [utilitarios,linux]
+categories: [windows, utilitarios]
 ---
 
 Durante a instalação do Windows 11, ele nos obriga a conectar a alguma rede Wifi.

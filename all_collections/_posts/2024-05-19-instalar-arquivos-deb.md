@@ -1,8 +1,8 @@
 ---
 title: Como instalar arquivos .deb via terminal no linux
 date: 2024-05-19 20:56:00 -03:00
-categories: [blogging,linux,utilitario]
-tags: [blogging,ventoy,linux]
+categories: [linux, utilitarios]
+tags: [linux, deb, apt]
 ---
 
 Abra o terminal do sistema.
