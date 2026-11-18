@@ -1,4 +1,6 @@
 title: Linux Sincero
+description: "Tutoriais diretos e práticos sobre Linux, homelab, bancos de dados e utilitários."
+lang: pt-BR
 markdown: kramdown
 
 # for atom feed
@@ -6,14 +8,13 @@ author:
   name: Max Cleiton
   email: maxcleiton@live.com
 
-url: "https://maxxcleiton.github.io/"
+url: "https://maxxcleiton.github.io"
 
 plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-google_search_console_verification_file
 
 collections_dir: all_collections
 collections:
@@ -26,7 +27,4 @@ defaults:
     values:
       layout: "post"
       permalink: /posts/:title/
-exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md"]
-
-google_search_console:
-  verification_file_code: 6a9892984c4ee862
+exclude: ["LICENSE", "README.md", "rodar_server.sh", "Gemfile", "Gemfile.lock"]
